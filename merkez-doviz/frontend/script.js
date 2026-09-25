@@ -1,4 +1,4 @@
-const API_URL = "https://merkez-bankasi-doviz-api.onrender.com/doviz";
+const API_URL = "/doviz";
 
 const currencySelect = document.getElementById("currency-select");
 const buyingRate = document.getElementById("buying-rate");
