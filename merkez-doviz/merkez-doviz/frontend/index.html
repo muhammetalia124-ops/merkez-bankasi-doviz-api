@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Döviz Kurları</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Döviz Kurları</h1>
+        <p>Güncel döviz kuru bilgileri</p>
+    </header>
+
+    <main>
+        <div class="currency-container">
+
+            <label for="currency-select">Döviz Türü</label>
+
+            <select id="currency-select">
+                <option value="">Döviz seçin</option>
+            </select>
+
+            <div class="currency-result">
+
+                <div class="rate-card">
+                    <h3>Döviz Alış</h3>
+                    <p id="buying-rate">-</p>
+                </div>
+
+                <div class="rate-card">
+                    <h3>Döviz Satış</h3>
+                    <p id="selling-rate">-</p>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
