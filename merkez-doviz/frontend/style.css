@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #f8fafc;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #94a3b8;
+    font-size: 18px;
+}
+
+main {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.currency-container {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.currency-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: #cbd5e1;
+    font-size: 15px;
+}
+
+#currency-select {
+    width: 100%;
+    padding: 14px 45px 14px 16px;
+    border: 1px solid #475569;
+    border-radius: 10px;
+    background: #0f172a;
+    color: #f8fafc;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+
+    appearance: none;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-position: right 18px center;
+    background-size: 16px;
+}
+
+#currency-select:focus {
+    border-color: #60a5fa;
+}
+
+.currency-result {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.rate-card {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 22px;
+    text-align: center;
+}
+
+.rate-card h3 {
+    color: #94a3b8;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.rate-card p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+
+/* GÜNDÜZ TEMASI */
+
+body.light-theme {
+    background: #f1f5f9;
+    color: #172033;
+}
+
+body.light-theme header p {
+    color: #475569;
+}
+
+body.light-theme .currency-container {
+    background: #e2e8f0;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+body.light-theme .currency-container label {
+    color: #475569;
+}
+
+body.light-theme #currency-select {
+    background-color: #f8fafc;
+    color: #172033;
+    border-color: #cbd5e1;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+}
+
+body.light-theme #currency-select:focus {
+    border-color: #f59e0b;
+}
+
+body.light-theme .rate-card {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+body.light-theme .rate-card h3 {
+    color: #475569;
+}
+
+body.light-theme .rate-card p {
+    color: #b45309;
+}
+
+
+/* MOBİL */
+
+@media (max-width: 600px) {
+
+    header {
+        padding-top: 50px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .currency-container {
+        padding: 20px;
+    }
+
+    .currency-result {
+        grid-template-columns: 1fr;
+    }
+
+    .rate-card p {
+        font-size: 24px;
+    }
+}
